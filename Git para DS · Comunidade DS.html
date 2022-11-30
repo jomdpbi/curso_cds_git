@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<!-- saved from url=(0090)https://membro.comunidadedatascience.com/76706-git-para-ds/1864114-aula-06-primeiro-commit -->
+<html lang="pt-BR" class="dark bg-zinc-900 h-full" data-controller="window" data-action="turbo:load-&gt;window#setDarkMode"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">.turbo-progress-bar {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: #0076ff;
+  z-index: 2147483647;
+  transition:
+    width 300ms ease-out,
+    opacity 150ms 150ms ease-in;
+  transform: translate3d(0, 0, 0);
+}
+</style>
+    
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+<link rel="stylesheet" href="./Git para DS · Comunidade DS_files/css2">
+<link rel="stylesheet" href="./Git para DS · Comunidade DS_files/application-a6044ac5af4bfaeb4bf77e912b57872b04233edd.css" data-turbo-track="reload">
+
+<style>
+  :root {
+    --color-nav-primary-bg: rgba(99, 195, 209, 0.9);
+    --color-nav-secondary-bg: rgba(234, 88, 12, 0.9);
+    --color-brand-light: #ed7030;
+    --color-brand-base: #EA580C;
+    --color-brand-dark: #c0490a;
+    --color-brand-invert: #ffffff;
+  }
+</style>
+
+
+<script src="./Git para DS · Comunidade DS_files/polyfill.min.js.descarregar" data-turbo-track="reload"></script>
+<script src="./Git para DS · Comunidade DS_files/commons-7a3a0466faf44525ba573504a4fa1adb3b720f87.js.descarregar" data-turbo-track="reload" defer="defer"></script>
+<script src="./Git para DS · Comunidade DS_files/vendors-f7ac47cce73d714d2ed001dea0ddd439a966b26e.js.descarregar" data-turbo-track="reload" defer="defer"></script>
+<script src="./Git para DS · Comunidade DS_files/application-262fe6a3dcfe1aadbca161ea8706f68748c02e5c.js.descarregar" data-turbo-track="reload" defer="defer"></script>
+
+<script>
+//<![CDATA[
+window.translations = {"activities":{"comments":"Comentários","lesson_statuses":"Conclusões","members_count":{"one":"1 membro","other":"%{num} membros"},"ratings":"Avaliações","y_axis_title":"Número de Interações"},"choices":{"item_select":"Pressione para selecionar","loading":"Carregando...","no_choices":"Sem opções para escolher","no_results":"Nenhum resultado encontrado"},"date":{"formats":{"simple":"dd/mm/yyyy"},"masks":{"simple":"__/__/____"}},"direct_uploads":{"file_count":{"one":"1 arquivo","other":"%{count} arquivos"},"selected":{"one":"1 arquivo selecionado","other":"%{count} arquivos selecionados"}},"nps":{"detractors":"Detratores","passives":"Passivos","promoters":"Promotores","responses":"Respostas"},"rankings":{"x_axis_title":"Média de conclusão","y_axis_title":"Índice de engajamento"},"time":{"formats":{"simple":"d/m/Y H:i"}}};
+
+//]]>
+</script>
+
+  <script src="./Git para DS · Comunidade DS_files/api.v2.js.descarregar" async=""></script><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="turbo-cache-control" content="no-cache"><meta http-equiv="x-ua-compatible" content="ie=edge"><meta name="csrf-param" content="authenticity_token"><meta name="csrf-token" content="AoeMr_Gr11X3f5LPvS1YsVnc4cLcqL1Hhpa1pLEwSIQeM7akt-tGFOQrIlUd55naDulJug-cS1PGdM7dqwt1Fg"><meta name="time-zone" content="Europe/Lisbon"><meta name="color-scheme" content="dark light"><title>Git para DS · Comunidade DS</title><link rel="icon" type="image/x-icon" href="https://assets.memberkit.com.br/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOEs0RFE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--8c9027515cdb37d81232cfe1b8b8d7642b85694e/simbolo%20cor.png"><link rel="apple-touch-icon" type="image/png" href="https://assets.memberkit.com.br/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOEs0RFE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--8c9027515cdb37d81232cfe1b8b8d7642b85694e/simbolo%20cor.png"><link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""></head>
+  <body class="h-full font-sans text-sm antialiased text-slate-900 dark:text-zinc-50">
+    <div id="app" class="flex flex-col h-full">
+      <header class="flex justify-between items-center px-2 h-16 border-b topbar dark">
+  <div class="flex items-center">
+    <button name="button" type="button" class="inline-flex items-center justify-center w-6 h-6 m-3" aria-controls="navbar" data-controller="toggle" data-toggle-base-class="toggled" data-toggle-cookie-value="menu" data-toggle-mobile-edgecase-value="true" data-action="click-&gt;toggle#toggle"><div class="flex-none w-6 h-6 "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+</svg>
+</div></button>
+    <div class="ml-2">
+      <a class="block focus:outline-none" href="https://membro.comunidadedatascience.com/">
+        <img class="max-h-12 dark:brightness-[100]" width="177" height="32" alt="MemberKit" src="./Git para DS · Comunidade DS_files/logo_v3-0946ee6c6be272a2235c2ababe0d8919d9f02a77.svg">
+</a>    </div>
+  </div>
+  <div class="flex justify-end items-center mr-4 space-x-3.5">
+    <div class="hidden w-full max-w-xs md:block">
+      <form action="https://membro.comunidadedatascience.com/search_results" accept-charset="UTF-8" method="get">
+  <label for="search" class="sr-only">Buscar</label>
+  <div class="relative topbar__search-wrapper transition duration-150 ease-in-out">
+    <input type="text" name="q" class="block w-full pr-12 pl-3 py-3 border-transparent rounded-md topbar__search focus:ring-brand-light focus:border-brand-light sm:text-sm transition duration-150 ease-in-out" placeholder="Pesquisar">
+
+    <div class="flex absolute inset-y-0 right-0 items-center pr-3 pointer-events-none">
+      <div class="flex-none w-6 h-6 "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+</svg>
+</div>
+    </div>
+</div></form>
+    </div>
+
+    <div class="hidden flex-none md:block">
+      <a class="block w-10 h-10 flex items-center topbar__circle justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-light" href="https://membro.comunidadedatascience.com/notifications">
+        <span class="sr-only">Notificações</span>
+        <div class="relative">
+          <div class="flex-none w-6 h-6 "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path>
+</svg>
+</div>
+                  </div>
+</a>    </div>
+
+    <div class="flex-none relative" data-controller="dropdown">
+          <button name="button" type="button" class="block rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-light topbar__circle" data-action="click-&gt;dropdown#toggle" data-dropdown-target="button" aria-expanded="false" aria-haspopup="true"><img class="w-10 h-10 rounded-full" src="./Git para DS · Comunidade DS_files/avatar-c2425b2300130f177ba2392471698f7aaa3faf15.png"></button>
+
+  <div class="hidden absolute right-0 z-30 mt-2 w-44 bg-white rounded-md divide-y ring-1 shadow-lg transform origin-top-right divide-slate-100 ring-black/5 dark:bg-zinc-600 dark:divide-zinc-500" role="menu" data-dropdown-target="menu" aria-orientation="vertical" tabindex="-1">
+            <div class="py-1" role="none">
+          <a class="block py-2 px-4 w-full text-sm text-left bg-white text-slate-700 dark:text-slate-50 dark:bg-zinc-600 dark:hover:bg-zinc-500 dark:hover:text-white hover:bg-slate-100 hover:text-slate-900" role="menuitem" tabindex="-1" href="https://membro.comunidadedatascience.com/users/edit">Minha conta</a>
+          <a class="block py-2 px-4 w-full text-sm text-left bg-white text-slate-700 dark:text-slate-50 dark:bg-zinc-600 dark:hover:bg-zinc-500 dark:hover:text-white hover:bg-slate-100 hover:text-slate-900 md:hidden" role="menuitem" tabindex="-1" href="https://membro.comunidadedatascience.com/notifications">Notificações</a>
+          
+        </div>
+        <div class="py-1" role="none" data-turbo="false">
+          <form class="button_to" method="post" action="https://membro.comunidadedatascience.com/users/sign_out"><input type="hidden" name="_method" value="delete" autocomplete="off"><button class="block py-2 px-4 w-full text-sm text-left bg-white text-slate-700 dark:text-slate-50 dark:bg-zinc-600 dark:hover:bg-zinc-500 dark:hover:text-white hover:bg-slate-100 hover:text-slate-900" role="menuitem" tabindex="-1" type="submit">Sair</button><input type="hidden" name="authenticity_token" value="6FE_Q0rqAFdjdycEUIMd-l36EUiLlJEcrHJvJkgP_4r12Mh4ckZ_Tsn6ApKRr71U9QnHDViQinOeWGL6z8UgHA" autocomplete="off"></form>
+        </div>
+
+</div></div>  </div>
+</header>
+
+
+      <div class="flex overflow-hidden flex-1 min-h-0">
+        <nav id="navbar" class="navbar navbar-light" data-controller="scroll-clip hidden" data-action="scroll-&gt;scroll-clip#redraw" aria-hidden="false" isvisible="true">
+  <div class="navbar__inner">
+    <div class="flex flex-col p-2 space-y-1">
+      <div class="hidden mb-1 -sm:block">
+        <form action="https://membro.comunidadedatascience.com/search_results" accept-charset="UTF-8" method="get">
+  <label for="search" class="sr-only">Buscar</label>
+  <div class="navbar__search">
+    <input type="text" name="q" class="navbar__search-input" placeholder="Pesquisar">
+
+    <div class="flex absolute inset-y-0 right-0 items-center pr-3 pointer-events-none">
+      <div class="flex-none w-5 h-5 "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+</svg>
+</div>
+    </div>
+</div></form>
+      </div>
+
+      <a class="navbar__link nav-item-course active" href="https://membro.comunidadedatascience.com/"><div class="flex-none w-6 h-6 "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+  <path fill-rule="evenodd" d="M2 5a2 2 0 012-2h8a2 2 0 012 2v10a2 2 0 002 2H4a2 2 0 01-2-2V5zm3 1h6v4H5V6zm6 6H5v2h6v-2z" clip-rule="evenodd"></path>
+  <path d="M15 7h1a2 2 0 012 2v5.5a1.5 1.5 0 01-3 0V7z"></path>
+</svg>
+</div><span class="navbar__text">Conteúdos</span></a>
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <a class="navbar__link nav-item-ranking" href="https://membro.comunidadedatascience.com/ranking"><div class="flex-none w-6 h-6 "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 21v-4m0 0V5a2 2 0 012-2h6.5l1 1H21l-3 6 3 6h-8.5l-1-1H5a2 2 0 00-2 2zm9-13.5V9"></path>
+</svg>
+</div><span class="navbar__text">Ranking</span></a>
+
+      
+
+        <a class="navbar__link nav-item-profile" href="https://membro.comunidadedatascience.com/profiles/9921872"><div class="flex-none w-6 h-6 "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+</svg>
+</div><span class="navbar__text">Perfil</span></a>
+
+        <a class="navbar__link nav-item-registration" href="https://membro.comunidadedatascience.com/users/edit"><div class="flex-none w-6 h-6 "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+</svg>
+</div><span class="navbar__text">Minha conta</span></a>
+
+        <a class="navbar__link nav-item-message" href="https://membro.comunidadedatascience.com/messages/new"><div class="flex-none w-6 h-6 ">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"></path>
+</svg>
+</div><span class="navbar__text">Atendimento</span></a>
+    </div>
+
+  </div>
+</nav>
+<div class="navbar-backdrop" aria-controls="navbar" data-controller="toggle" data-toggle-base-class="toggled" data-toggle-cookie-value="menu" data-toggle-mobile-edgecase-value="true" data-action="click-&gt;toggle#toggle"></div>
+
+        <main id="main" class="overflow-y-auto flex-1 min-w-0 bg-white dark:bg-zinc-900" data-controller="portal">
+          
+  
+  <div class="bg-theater">
+    <div class="px-4 mx-auto max-w-screen-xl md:px-8">
+      <div class="flex">
+        <div class="grow">
+          <div class="aspect-w-16 aspect-h-9 relative z-20" data-controller="panda" data-action="unload@window-&gt;panda#track turbo:before-visit@window-&gt;panda#track" data-panda-uid-value="20c05d15-ad18-4a34-a8fd-1f9ae8bc1481" data-panda-time-value="0" data-panda-track-url-value="/76706-git-para-ds/1864114-aula-06-primeiro-commit/track.json" data-panda-player-url-value="https://player-vz-21d208f5-9c6.tv.pandavideo.com.br/embed/?v=29acb543-5d8c-4099-af01-fad06b40ac82"><iframe id="panda-z43717rmi" src="./Git para DS · Comunidade DS_files/saved_resource.html" allow="accelerometer;gyroscope;autoplay;encrypted-media;picture-in-picture" allowfullscreen=""></iframe></div>
+        </div>
+        <div id="aside__entries" class="relative hidden lg:block lg:w-4/12">
+          <div class="overflow-y-auto absolute inset-0 scrollbar">
+            <a class="flex items-center py-3 px-5 leading-snug transition-all outline-none lessons__aside-entry text-white bg-white/10" data-controller="scroll-to-self" href="https://membro.comunidadedatascience.com/76706-git-para-ds/1864114-aula-06-primeiro-commit">
+  <div class="flex-none">
+      <img width="60" height="33.75" class="rounded" src="./Git para DS · Comunidade DS_files/thumbnail.jpg">
+  </div>
+  <div class="ml-4 font-medium">
+    Aula 06 - Primeiro Commit
+  </div>
+</a><a class="flex items-center py-3 px-5 leading-snug transition-all outline-none lessons__aside-entry text-white/60 hover:text-white/100 hover:bg-white/10" href="https://membro.comunidadedatascience.com/76706-git-para-ds/1870116-aula-07-o-que-e-um-versionador">
+  <div class="flex-none">
+      <img width="60" height="33.75" class="rounded" src="./Git para DS · Comunidade DS_files/thumbnail(1).jpg">
+  </div>
+  <div class="ml-4 font-medium">
+    Aula 07 - O que é um versionador
+  </div>
+</a><a class="flex items-center py-3 px-5 leading-snug transition-all outline-none lessons__aside-entry text-white/60 hover:text-white/100 hover:bg-white/10" href="https://membro.comunidadedatascience.com/76706-git-para-ds/1879618-aula-08-repositorio-local-vs-repositorio-remoto">
+  <div class="flex-none">
+      <img width="60" height="33.75" class="rounded" src="./Git para DS · Comunidade DS_files/thumbnail(2).jpg">
+  </div>
+  <div class="ml-4 font-medium">
+    Aula 08 - Repositório Local vs Repositório Remoto
+  </div>
+</a><a class="flex items-center py-3 px-5 leading-snug transition-all outline-none lessons__aside-entry text-white/60 hover:text-white/100 hover:bg-white/10" href="https://membro.comunidadedatascience.com/76706-git-para-ds/1893849-aula-09-ciclo-de-vida-de-um-arquivo-versionado">
+  <div class="flex-none">
+      <img width="60" height="33.75" class="rounded" src="./Git para DS · Comunidade DS_files/thumbnail(3).jpg">
+  </div>
+  <div class="ml-4 font-medium">
+    Aula 09 - Ciclo de vida de um arquivo versionado
+  </div>
+</a><a class="flex items-center py-3 px-5 leading-snug transition-all outline-none lessons__aside-entry text-white/60 hover:text-white/100 hover:bg-white/10" href="https://membro.comunidadedatascience.com/76706-git-para-ds/1903036-aula-10-areas-de-trabalho-do-git">
+  <div class="flex-none">
+      <img width="60" height="33.75" class="rounded" src="./Git para DS · Comunidade DS_files/thumbnail(4).jpg">
+  </div>
+  <div class="ml-4 font-medium">
+    Aula 10 - Áreas de Trabalho do GIt
+  </div>
+</a>
+          </div>
+</div>      </div>
+    </div>
+  </div>
+
+<div class="bg-slate-50 dark:bg-zinc-800/40">
+  <div class="p-4 mx-auto max-w-screen-xl md:px-8">
+    <div class="flex flex-col md:flex-row md:justify-between">
+      <div class="flex items-center space-x-1 text-slate-700 dark:text-zinc-100">
+        <div class="flex justify-center items-center w-6 h-6">
+          <div class="flex-none w-4 h-4 "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+</svg>
+</div>
+        </div>
+        <div class="flex-none w-5 h-5 text-slate-300 dark:text-zinc-300"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+</svg>
+</div>
+        <div class="px-0.5">
+          <a class="text-slate-700 hover:text-slate-900 dark:text-zinc-100 dark:hover:text-white" href="https://membro.comunidadedatascience.com/76706-git-para-ds">Git para DS</a>
+        </div>
+        <div class="flex-none w-5 h-5 text-slate-300 dark:text-zinc-300"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+  <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+</svg>
+</div>
+        <div class="px-0.5">
+          <a class="text-slate-700 hover:text-slate-900 dark:text-zinc-100 dark:hover:text-white" href="https://membro.comunidadedatascience.com/76706-git-para-ds#323018">Ciclo 02 - Fundamentos</a>
+        </div>
+      </div>
+      <div class="flex mt-4 md:mt-0">
+          <button name="button" type="button" class="btn btn-outline-secondary p-2 hidden lg:block ring-offset-slate-50 dark:ring-offset-zinc-900" aria-controls="aside__entries" data-controller="toggle" data-toggle-cookie-value="wide" data-toggle-base-class="lg:hidden" data-tippy-content="Alternar layout" data-action="click-&gt;toggle#toggle"><div class="flex-none w-5 h-5 "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"></path>
+</svg>
+</div></button>
+
+          <button name="button" type="button" class="btn btn-outline-secondary p-2 lg:ml-3 ring-offset-slate-50 dark:ring-offset-zinc-900" data-tippy-content="Apagar as luzes" data-controller="theater" data-action="click-&gt;theater#show"><div class="flex-none w-5 h-5 "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+</svg>
+</div></button>
+
+          <div class="flex ml-3">
+            <a class="btn btn-outline-secondary p-2 rounded-r-none relative focus:z-10 ring-offset-slate-50 dark:ring-offset-zinc-900" data-tippy-content="Anterior" href="https://membro.comunidadedatascience.com/76706-git-para-ds/1816346-aula-05-download-do-projeto-e-preparacao-do-ambiente"><div class="flex-none w-5 h-5 "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+</svg>
+</div></a>
+
+            <a class="btn btn-outline-secondary p-2 -ml-0.5 rounded-l-none relative focus:z-10 ring-offset-slate-50 dark:ring-offset-zinc-900" data-tippy-content="Próximo" href="https://membro.comunidadedatascience.com/76706-git-para-ds/1870116-aula-07-o-que-e-um-versionador"><div class="flex-none w-5 h-5 "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+</svg>
+</div></a>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="px-4 pb-4 mx-auto max-w-screen-xl md:px-8 md:pb-8">
+  <div class="grid gap-8 mt-8 lg:grid-cols-3">
+    <div class="lg:col-span-2">
+      <h2 class="text-2xl font-semibold tracking-tight text-slate-700 dark:text-zinc-100">Aula 06 - Primeiro Commit</h2>
+
+      <div class="mt-8 max-w-none prose prose-sm prose-zinc dark:prose-invert"><p>Nesta aula iremos ver:<br></p><p></p><ul><li>Estrutura do Projeto</li><li>O que é o arquivo .gitignore</li><li>E qual os passos que damos para fazer um commit</li></ul><p></p></div>
+
+        <div class="p-4 mt-8 rounded bg-slate-50 dark:bg-zinc-800">
+          <h4 class="text-lg font-medium tracking-tight">Materiais complementares</h4>
+          <div class="mt-6 space-y-2.5" data-turbo="false">
+            <div>
+  <a class="flex items-center space-x-2 text-slate-500 hover:text-slate-700 dark:text-zinc-300 dark:hover:text-white" href="https://membro.comunidadedatascience.com/76706-git-para-ds/1864114-aula-06-primeiro-commit/downloads/1745056">
+    <span class="inline-flex items-center rounded-md font-semibold bg-slate-200 text-slate-800 dark:bg-zinc-500 dark:text-zinc-300 px-2 py-1 text-xs justify-center uppercase w-10">pdf</span>
+    <p class="grow">aula_06_primeiro_commit_ppt.pptx</p>
+    <p>469 KB</p>
+    <div class="flex-none w-5 h-5 text-slate-700 dark:text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+</svg>
+</div>
+</a>
+</div>
+<div>
+  <a class="flex items-center space-x-2 text-slate-500 hover:text-slate-700 dark:text-zinc-300 dark:hover:text-white" href="https://membro.comunidadedatascience.com/76706-git-para-ds/1864114-aula-06-primeiro-commit/downloads/1745057">
+    <span class="inline-flex items-center rounded-md font-semibold bg-slate-200 text-slate-800 dark:bg-zinc-500 dark:text-zinc-300 px-2 py-1 text-xs justify-center uppercase w-10">pdf</span>
+    <p class="grow">aula_06_primeiro_commit_doc</p>
+    <p>217 KB</p>
+    <div class="flex-none w-5 h-5 text-slate-700 dark:text-white"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path>
+</svg>
+</div>
+</a>
+</div>
+
+          </div>
+        </div>
+    </div>
+
+    <div class="lg:col-span-1 lg:row-span-2">
+      <div class="lg:sticky lg:top-8 lesson__completion">
+        <div class="p-6 rounded border shadow-st border-slate-100 dark:border-zinc-700 dark:bg-zinc-800">
+  <div class="lesson__rating mb-3">
+    <p class="font-medium text-center text-slate-800 dark:text-zinc-50">Como você avalia este conteúdo?</p>
+    <form data-controller="rating" data-action="submit-&gt;rating#select" class="form mt-2" action="https://membro.comunidadedatascience.com/76706-git-para-ds/1864114-aula-06-primeiro-commit/ratings" accept-charset="UTF-8" method="post"><input type="hidden" name="_method" value="patch" autocomplete="off"><input type="hidden" name="authenticity_token" value="cik8hswq4zij32EqB-Syuck2Ru-w4Q1Z-bFgVmxYyiD7PTiJ4iODRa3qag4sXUXGcygdrA2tXGFyG9PZcsrPQw" autocomplete="off">
+  <div class="flex justify-around py-3 px-4 rounded bg-slate-50 dark:bg-zinc-700">
+    <button name="rating[stars]" type="submit" value="1" title="Muito ruim" class="rounded-full transition-all ease-in-out hover:scale-125 outline-zinc-600 grayscale hover:grayscale-0" data-rating-target="submit"><img width="28" height="28" src="./Git para DS · Comunidade DS_files/angry-7ee91accd6e71ed40aa09b5002d117342f92844f.svg"></button>
+    <button name="rating[stars]" type="submit" value="2" title="Ruim" class="rounded-full transition-all ease-in-out hover:scale-125 outline-zinc-600 grayscale hover:grayscale-0" data-rating-target="submit"><img width="28" height="28" src="./Git para DS · Comunidade DS_files/disappointed-41869c6a820f12f6d41c43f91933dfd0b6b27c0b.svg"></button>
+    <button name="rating[stars]" type="submit" value="3" title="Razoável" class="rounded-full transition-all ease-in-out hover:scale-125 outline-zinc-600 grayscale hover:grayscale-0" data-rating-target="submit"><img width="28" height="28" src="./Git para DS · Comunidade DS_files/expressionless-f398c5c9a04f1f5b4e63916ccf754102368f956e.svg"></button>
+    <button name="rating[stars]" type="submit" value="4" title="Muito bom" class="rounded-full transition-all ease-in-out hover:scale-125 outline-zinc-600 grayscale hover:grayscale-0" data-rating-target="submit"><img width="28" height="28" src="./Git para DS · Comunidade DS_files/slightly_smiling_face-f66f7195c55d29fbdc4a20c49e059a7e46a6c5f1.svg"></button>
+    <button name="rating[stars]" type="submit" value="5" title="Excelente" class="rounded-full transition-all ease-in-out hover:scale-125 outline-zinc-600 grayscale hover:grayscale-0" data-rating-target="submit"><img width="28" height="28" src="./Git para DS · Comunidade DS_files/grinning-1d20d55592275232eb39cec0ffad28f566d58b9b.svg"></button>
+  </div>
+</form>
+  </div>
+  <form class="button_to" method="post" action="https://membro.comunidadedatascience.com/76706-git-para-ds/1864114-aula-06-primeiro-commit/complete"><input type="hidden" name="_method" value="patch" autocomplete="off"><button class="py-2.5 w-full text-sm btn btn-outline-secondary" type="submit">Marcar como concluído</button><input type="hidden" name="authenticity_token" value="lGJoyQOfg71vXL-V2FHgR1wUSKYPdRhL5hL9AmLQ0ZTbtpuD1LkKsMw3lKkb75wo-raeYPt2XBv0FpOU6551cQ" autocomplete="off"></form>
+  <div class="flex justify-end items-center mt-2.5">
+    <div class="w-full h-2 rounded-full bg-slate-200 dark:bg-zinc-700">
+      <div class="h-full rounded-full bg-brand-base" style="width: 0%"></div>
+    </div>
+    <span class="w-10 text-xs font-medium text-right text-slate-400 dark:text-zinc-200">0%</span>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+      <div class="lg:col-span-2">
+        <div class="pt-8 border-t border-slate-100 dark:border-zinc-700">
+          <turbo-frame id="comments">
+            <div class="flex justify-between items-center">
+  <h3 class="text-xl font-medium tracking-tight capitalize text-slate-700 dark:text-zinc-100">
+      1 comentário
+  </h3>
+
+</div>
+
+<form class="form mt-6" id="new_comment" data-controller="form" data-action="turbo:submit-end-&gt;form#reset" action="https://membro.comunidadedatascience.com/76706-git-para-ds/1864114-aula-06-primeiro-commit/comments" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="Z0t5yhRTbQd6ayKFdUlhzFJ0DI9P1SQvVypAHRlHp8rGGd3vB__xulXt-Muf4beRY99Go3ZNKWiZ2XbJIx-NNw" autocomplete="off">
+  <input value="102351" autocomplete="off" type="hidden" name="comment[classroom_id]" id="comment_classroom_id">
+
+  <div class="flex space-x-4">
+    <div class="flex-none">
+      <img class="w-12 h-12 rounded-full" src="./Git para DS · Comunidade DS_files/avatar-c2425b2300130f177ba2392471698f7aaa3faf15.png">
+    </div>
+    <div class="text-right grow">
+      <textarea rows="2" class="form-control mt-0" required="required" aria-required="true" placeholder="Escreva seu comentário…" maxlength="2400" name="comment[content]" id="comment_content"></textarea>
+
+      <input type="submit" name="commit" value="Publicar" class="btn btn btn-primary mt-2" data-disable-with="Publicando...">
+    </div>
+  </div>
+</form>
+<div class="mt-6">
+  <div id="comments__entries">
+    <div id="comment_11112980" class="comment ml-2.5 md:ml-1">
+  <div class="flex">
+
+    <div class="relative flex-none py-3">
+      <img class="relative z-10 w-8 h-8 md:w-10 md:h-10 rounded-full" src="./Git para DS · Comunidade DS_files/20210923_153832.jpg">
+      <div class="absolute top-0 left-1/2 w-0.5 h-full -translate-x-1/2 bg-slate-100 dark:bg-zinc-800"></div>
+    </div>
+
+    <div class="py-3 ml-2 md:ml-4 grow">
+      <div class="flex justify-between items-baseline">
+        <div class="flex flex-col md:flex-row comment__user">
+          <span class="font-semibold">Daniel Camelo Braga</span>
+          <time datetime="2022-11-02T13:51:21+00:00" class="md:ml-2 text-slate-400 dark:text-zinc-400">
+            28 dias atrás
+</time>        </div>
+
+      </div>
+
+      <turbo-frame id="content_comment_11112980">
+        <div class="mt-1 comment__content" data-turbo="false">
+  <p>sensacional, passo a passo, é como aprender a escrever novamente!</p>
+</div>
+
+<div class="flex mt-2 space-x-1.5">
+    <a class="p-1.5 text-slate-700 hover:text-slate-900 dark:text-zinc-100 dark:hover:text-white" data-turbo-stream="true" data-tippy-content="Responder" href="https://membro.comunidadedatascience.com/76706-git-para-ds/1864114-aula-06-primeiro-commit/comments/new?classroom_id=102351&amp;parent_id=11112980"><div class="flex-none w-4 h-4 "><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6"></path>
+</svg>
+</div></a>
+
+</div>
+
+</turbo-frame>
+      <turbo-frame id="reply_comment_11112980"></turbo-frame>
+    </div>
+  </div>
+
+  <div id="replies_comment_11112980"></div>
+</div>
+  </div>
+
+  
+</div>
+
+</turbo-frame>        </div>
+      </div>
+  </div>
+</div>
+
+
+          
+        </main>
+      </div>
+    </div>
+
+    
+  
+
+<div class="transition-opacity duration-200 hidden fixed inset-0 bg-black opacity-0 z-10"></div></body></html>
